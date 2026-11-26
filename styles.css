@@ -1,0 +1,140 @@
+/* Turkana Heritage GreenWorks: basket story page. Mobile-first. No images, no external requests. */
+:root{
+  --lake:#08302d;      /* deep lake */
+  --jade:#0f6b5e;      /* Jade Sea */
+  --straw:#cdb46d;     /* doum palm straw */
+  --straw-dk:#8f7a3a;
+  --dye:#b3382c;       /* natural-dye red */
+  --ink:#14302c;
+  --muted:#4a605c;
+  --chalk:#f3f7f6;
+  --white:#fff;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html[lang="en"] [lang="sw"],html[lang="sw"] [lang="en"]{display:none}
+body{margin:0;font:1.0625rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--white)}
+h1,h2,h3{font-family:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;line-height:1.12;margin:0 0 .6em;color:var(--lake)}
+h1{font-size:clamp(2.3rem,9.5vw,4.4rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.75rem,6.3vw,2.5rem)}
+h3{font-size:1.25rem;margin-bottom:.25em}
+p{margin:0 0 1em;max-width:36rem}
+a{color:var(--jade)}
+:focus-visible{outline:3px solid var(--straw);outline-offset:3px}
+.wrap{width:min(100% - 2.5rem,62rem);margin-inline:auto}
+section{padding:3.5rem 0}
+.sub{color:var(--muted);font-size:1.1rem}
+.small{font-size:.92rem;color:var(--muted)}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:10;background:var(--lake);color:var(--white);padding:.6rem 0}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-family:"Palatino Linotype",Palatino,Georgia,serif;font-weight:700;font-size:1.05rem;color:var(--white);text-decoration:none}
+.lang{display:flex;border:1px solid var(--straw);border-radius:.5rem;overflow:hidden}
+.lang button{font:inherit;font-size:.95rem;min-width:3rem;min-height:2.75rem;padding:0 .8rem;border:0;background:transparent;color:var(--white);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--straw);color:var(--lake);font-weight:700}
+
+/* prototype notice */
+.notice{background:#fff6dc;color:#4a3b0a;padding:.9rem 0;font-size:.95rem}
+.notice p{margin:0;max-width:62rem}
+
+/* hero: a coiled basket seen from above, drawn in CSS */
+.hero{background:var(--lake);color:var(--white);padding:3rem 0 0;overflow:hidden}
+.hero h1{color:var(--white);margin-bottom:.4em}
+.hero p{font-size:1.15rem;color:#d7e6e2}
+.hero .lead{color:var(--straw);font-weight:600;margin-bottom:.8em}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.btn{display:inline-block;min-height:3rem;padding:.75rem 1.3rem;border-radius:.5rem;background:var(--straw);color:var(--lake);font-weight:700;text-decoration:none}
+.btn:hover{background:#dbc88d}
+.btn.alt{background:transparent;color:var(--white);box-shadow:inset 0 0 0 2px var(--straw)}
+.btn.alt:hover{background:rgba(205,180,109,.18)}
+.coil-box{height:13rem;margin-top:2.5rem;overflow:hidden}
+.coil{width:30rem;max-width:none;aspect-ratio:1;border-radius:50%;margin-inline:auto;
+  background:
+   radial-gradient(circle at center,var(--lake) 0 1.6rem,transparent 1.65rem),
+   repeating-radial-gradient(circle at center,
+     var(--straw) 0 26px,var(--straw-dk) 26px 29px,
+     var(--straw) 29px 55px,var(--straw-dk) 55px 58px,
+     var(--dye) 58px 84px,var(--straw-dk) 84px 87px,
+     var(--straw) 87px 113px,var(--straw-dk) 113px 116px);
+  box-shadow:0 0 0 .6rem var(--jade)}
+
+/* weaver */
+.weaver .profile{background:var(--chalk);border-radius:.75rem;padding:1.5rem;max-width:40rem}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.25rem;margin:1.25rem 0 0}
+.facts div{border-top:3px solid var(--jade);padding-top:.5rem}
+.facts dt{font-size:.88rem;color:var(--muted)}
+.facts dd{margin:0;font-weight:700}
+
+/* problem: numbers set into the sentence */
+.ledger{list-style:none;margin:2rem 0 1.5rem;padding:0;display:grid;gap:1.75rem}
+.ledger li{display:grid;grid-template-columns:8.5rem 1fr;gap:1rem;align-items:baseline}
+.ledger strong{font-family:"Palatino Linotype",Palatino,Georgia,serif;font-size:2.1rem;line-height:1;color:var(--dye)}
+.ledger span{max-width:30rem}
+.alt-bg{background:var(--chalk)}
+
+/* journey: a real sequence, so it is numbered */
+.steps{list-style:none;counter-reset:s;margin:2rem 0 0;padding:0;display:grid;gap:1.5rem}
+.steps li{counter-increment:s;position:relative;padding-left:3.5rem;max-width:38rem}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--jade);color:var(--white);display:grid;place-items:center;font-weight:700}
+.steps p{margin:0}
+
+/* money */
+.price-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;max-width:36rem;margin-top:1.5rem}
+.price-row label{font-weight:600}
+.price-row output{font-family:"Palatino Linotype",Palatino,Georgia,serif;font-size:1.9rem;font-weight:700;color:var(--lake)}
+input[type=range]{width:100%;max-width:36rem;accent-color:var(--jade);height:2.75rem;margin:.25rem 0 .5rem}
+.split-bar{display:flex;height:2.25rem;border-radius:.4rem;overflow:hidden;max-width:36rem;margin:.75rem 0 1.25rem}
+.split-bar i{display:block;min-width:2px}
+.split{list-style:none;margin:0 0 1.25rem;padding:0;display:grid;gap:.7rem;max-width:36rem}
+.split li{display:grid;grid-template-columns:1rem 1fr auto;gap:.75rem;align-items:center}
+.split b{width:1rem;height:1rem;border-radius:50%}
+.split em{font-style:normal;color:var(--muted);font-size:.92rem}
+.split .amt{font-weight:700;white-space:nowrap}
+
+/* palm counter */
+.counter{max-width:36rem;margin-top:1.5rem}
+.counter .big{font-family:"Palatino Linotype",Palatino,Georgia,serif;font-size:2.6rem;font-weight:700;color:var(--jade);line-height:1}
+.track{height:.9rem;background:#dbe6e3;border-radius:1rem;overflow:hidden;margin:.6rem 0 .4rem}
+.track i{display:block;height:100%;min-width:.5rem;background:var(--jade)}
+
+/* commitments */
+.pledges{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;gap:1rem}
+.pledges li{position:relative;padding-left:2rem;max-width:36rem}
+.pledges li::before{content:"";position:absolute;left:0;top:.45rem;width:1.1rem;height:1.1rem;border-radius:50%;
+  background:radial-gradient(circle,var(--straw) 0 .18rem,var(--jade) .2rem 100%)}
+
+/* what the purchase builds */
+.build{list-style:none;margin:1.5rem 0 2rem;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 1.25rem}
+.build strong{display:block;font-family:"Palatino Linotype",Palatino,Georgia,serif;font-size:2.1rem;line-height:1;color:var(--jade)}
+.sdg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1rem}
+.sdg li{display:flex;align-items:center;gap:.6rem;font-size:.95rem}
+.sdg b{flex:none;width:2rem;height:2rem;border-radius:.3rem;display:grid;place-items:center;color:#fff;font-size:.95rem}
+
+/* contact */
+.cta{background:var(--jade);color:var(--white)}
+.cta h2{color:var(--white)}
+.cta a.btn{background:var(--white);color:var(--lake)}
+
+/* team */
+.team{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;gap:1.25rem}
+.team strong{display:block;font-size:1.1rem;color:var(--lake)}
+.team span{display:block;color:var(--muted);max-width:30rem}
+
+footer{background:var(--lake);color:#b9cfca;padding:2rem 0 2.5rem;font-size:.92rem}
+footer p{max-width:46rem}
+
+@media (min-width:56rem){
+  section{padding:5rem 0}
+  .hero{padding-top:4.5rem;padding-bottom:4.5rem}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+  .coil-box{height:auto;margin-top:0;overflow:visible}
+  .coil{width:min(100%,28rem)}
+  .ledger li{grid-template-columns:11rem 1fr}
+  .ledger strong{font-size:2.8rem}
+  .build{grid-template-columns:repeat(3,1fr)}
+  .sdg{grid-template-columns:repeat(3,1fr)}
+  .team{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

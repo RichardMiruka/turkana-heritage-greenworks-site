@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turkana Heritage GreenWorks: the story of your basket</title>
+<meta name="description" content="Meet the weaver, follow your Doum palm basket from leaf to buyer, and see where every shilling went. Kiingereza na Kiswahili.">
+<meta name="theme-color" content="#08302d">
+<meta property="og:title" content="Turkana Heritage GreenWorks">
+<meta property="og:description" content="A basket you can trace to the woman who made it, the palm it came from, and the seedlings your purchase paid for.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230f6b5e'/%3E%3Ccircle cx='16' cy='16' r='10' fill='%23cdb46d'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23b3382c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script>
+/* Language: ?lang=sw in the link wins, then the saved choice, then the phone's language. */
+var TITLES={en:"Turkana Heritage GreenWorks: the story of your basket",sw:"Turkana Heritage GreenWorks: hadithi ya kikapu chako"};
+function setLang(l,save){
+  l=l==="sw"?"sw":"en";
+  document.documentElement.lang=l;
+  document.title=TITLES[l];
+  var b=document.querySelectorAll(".lang button");
+  for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-l")===l?"true":"false");}
+  if(save){try{localStorage.setItem("lang",l)}catch(e){}}
+}
+(function(){
+  var q=null,s=null;
+  try{q=new URLSearchParams(location.search).get("lang")}catch(e){}
+  try{s=localStorage.getItem("lang")}catch(e){}
+  var l=q||s||(navigator.language||"en").slice(0,2);
+  document.documentElement.lang=l==="sw"?"sw":"en";
+  document.addEventListener("DOMContentLoaded",function(){setLang(document.documentElement.lang,false)});
+})();
+</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Turkana Heritage GreenWorks</a>
+    <div class="lang" role="group" aria-label="Language / Lugha">
+      <button type="button" data-l="en" aria-pressed="true" onclick="setLang('en',true)">EN</button>
+      <button type="button" data-l="sw" aria-pressed="false" onclick="setLang('sw',true)">SW</button>
+    </div>
+  </div>
+</header>
+
+<div class="notice">
+  <div class="wrap">
+    <p lang="en"><strong>Prototype with sample data.</strong> The weaver, dates and counts below are examples that show how a real basket page will read. Prices and shares are proposals.</p>
+    <p lang="sw"><strong>Mfano wa majaribio wenye data za mfano.</strong> Mfumaji, tarehe na hesabu zilizo hapa chini ni mifano inayoonyesha jinsi ukurasa halisi wa kikapu utakavyosomeka. Bei na mgawanyo ni mapendekezo.</p>
+  </div>
+</div>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="lead" lang="en">Sample basket TH-0142</p>
+      <p class="lead" lang="sw">Kikapu cha mfano TH-0142</p>
+      <h1 lang="en">Doum palm basket, hand-coiled at Lake Turkana</h1>
+      <h1 lang="sw">Kikapu cha mkoche kilichofumwa kwa mikono, Ziwa Turkana</h1>
+      <p lang="en">Every basket has a maker, a palm stand and a planting trail. This page shows yours.</p>
+      <p lang="sw">Kila kikapu kina mfumaji, mikoche yake na njia ya upandaji miche. Ukurasa huu unaonyesha chako.</p>
+      <div class="btns">
+        <a class="btn" href="#money"><span lang="en">See where your money went</span><span lang="sw">Angalia fedha yako ilikoenda</span></a>
+        <a class="btn alt" href="#reorder"><span lang="en">Reorder or message the weavers</span><span lang="sw">Agiza tena au wasiliana na wafumaji</span></a>
+      </div>
+    </div>
+    <div class="coil-box" aria-hidden="true"><div class="coil"></div></div>
+  </div>
+</section>
+
+<section class="weaver">
+  <div class="wrap">
+    <h2 lang="en">The weaver</h2>
+    <h2 lang="sw">Mfumaji</h2>
+    <div class="profile">
+      <h3 lang="en">Made by Naoto (sample profile)</h3>
+      <h3 lang="sw">Kimefumwa na Naoto (wasifu wa mfano)</h3>
+      <p lang="en">Naoto learned to split and coil Doum palm leaf from her grandmother. Her profile appears here only with her written or recorded consent.</p>
+      <p lang="sw">Naoto alijifunza kugawanya na kuviringa jani la mkoche kutoka kwa bibi yake. Wasifu wake unaonekana hapa kwa idhini yake ya maandishi au ya kurekodiwa tu.</p>
+      <dl class="facts">
+        <div><dt lang="en">Home shore</dt><dt lang="sw">Mwambao wa nyumbani</dt>
+             <dd lang="en">Lake Turkana (example)</dd><dd lang="sw">Ziwa Turkana (mfano)</dd></div>
+        <div><dt lang="en">Weaving since</dt><dt lang="sw">Anafuma tangu</dt>
+             <dd lang="en">Age 12 (example)</dd><dd lang="sw">Umri wa miaka 12 (mfano)</dd></div>
+        <div><dt lang="en">Time on this basket</dt><dt lang="sw">Muda kwenye kikapu hiki</dt>
+             <dd lang="en">2 working days (example)</dd><dd lang="sw">Siku 2 za kazi (mfano)</dd></div>
+        <div><dt lang="en">Group</dt><dt lang="sw">Kikundi</dt>
+             <dd lang="en">Community hub member</dd><dd lang="sw">Mwanachama wa kituo cha jamii</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="wrap">
+    <h2 lang="en">Why this basket exists</h2>
+    <h2 lang="sw">Kwa nini kikapu hiki kipo</h2>
+    <p class="sub" lang="en">Weavers around Lake Turkana are skilled, but not paid for their skill.</p>
+    <p class="sub" lang="sw">Wafumaji wa eneo la Ziwa Turkana wana ujuzi, lakini hawalipwi kulingana na ujuzi wao.</p>
+    <ul class="ledger">
+      <li><strong>79.4%</strong>
+        <span lang="en">of Turkana residents live in poverty. The Kenyan average is 35%.</span>
+        <span lang="sw">ya wakazi wa Turkana wanaishi katika umaskini. Wastani wa Kenya ni 35%.</span></li>
+      <li><strong>20–74%</strong>
+        <span lang="en">of the Lodwar retail price is what weavers get, and they cannot set it.</span>
+        <span lang="sw">ya bei ya rejareja ya Lodwar ndiyo wanayopata wafumaji, na hawawezi kuipanga.</span></li>
+      <li><strong>KSh 700</strong>
+        <span lang="en">is what a weaver was paid for a basket in 2016.</span>
+        <span lang="sw">ndicho kilicholipwa kwa mfumaji kwa kikapu mwaka 2016.</span></li>
+    </ul>
+    <p lang="en">Young people are not learning the craft because it does not pay. Doum palm, the raw material, needs managed harvesting that nobody funds.</p>
+    <p lang="sw">Vijana hawajifunzi ufundi huu kwa sababu hauleti malipo. Mkoche, malighafi, unahitaji uvunaji unaosimamiwa ambao hakuna anayeufadhili.</p>
+    <p class="small" lang="en">Sources: Kenya National Bureau of Statistics (KNBS); IGAD study, 2016.</p>
+    <p class="small" lang="sw">Vyanzo: Kenya National Bureau of Statistics (KNBS); utafiti wa IGAD, 2016.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 lang="en">From leaf to basket</h2>
+    <h2 lang="sw">Kutoka jani hadi kikapu</h2>
+    <ol class="steps">
+      <li>
+        <h3 lang="en">Gathered</h3><h3 lang="sw">Hukusanywa</h3>
+        <p lang="en">Doum palm leaves come from stands along the lake shore and the Turkwel River.</p>
+        <p lang="sw">Majani ya mkoche hutoka kwenye mikoche kando ya ufuo wa ziwa na Mto Turkwel.</p>
+      </li>
+      <li>
+        <h3 lang="en">Coiled by hand</h3><h3 lang="sw">Hufumwa kwa mikono</h3>
+        <p lang="en">A weaver splits and coils the leaf, to a community quality standard.</p>
+        <p lang="sw">Mfumaji hugawanya na kuviringa jani, kwa kiwango cha ubora cha jamii.</p>
+      </li>
+      <li>
+        <h3 lang="en">Paid on delivery</h3><h3 lang="sw">Hulipwa wakati wa kuwasilisha</h3>
+        <p lang="en">She delivers to the weaver-owned hub and is paid on delivery.</p>
+        <p lang="sw">Anawasilisha kwenye kituo kinachomilikiwa na wafumaji na analipwa mara anapowasilisha.</p>
+      </li>
+      <li>
+        <h3 lang="en">Tagged</h3><h3 lang="sw">Hutiwa lebo</h3>
+        <p lang="en">A QR tag links the basket to its maker, its palm stand and its planting record.</p>
+        <p lang="sw">Lebo ya QR inaunganisha kikapu na mfumaji wake, mikoche yake na rekodi yake ya upandaji.</p>
+      </li>
+      <li>
+        <h3 lang="en">Yours</h3><h3 lang="sw">Chako</h3>
+        <p lang="en">The basket reaches you, and this page shows where your money went.</p>
+        <p lang="sw">Kikapu kinakufikia, na ukurasa huu unaonyesha fedha yako ilikoenda.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="alt-bg" id="money">
+  <div class="wrap">
+    <h2 lang="en">Where your money went</h2>
+    <h2 lang="sw">Fedha yako ilikoenda</h2>
+    <p class="sub" lang="en">Every shilling, split six ways.</p>
+    <p class="sub" lang="sw">Kila shilingi, imegawanywa mara sita.</p>
+
+    <div class="price-row">
+      <label for="price"><span lang="en">Basket price</span><span lang="sw">Bei ya kikapu</span></label>
+      <output id="price" for="price">KSh 4,500</output>
+    </div>
+    <input id="price" type="range" min="4500" max="5000" step="50" value="4500" aria-describedby="price-hint">
+    <p class="small" id="price-hint" lang="en">Slide to see the split at other prices in our range.</p>
+    <p class="small" id="price-hint-sw" lang="sw">Sogeza kuona mgawanyo kwa bei nyingine katika wigo wetu.</p>
+
+    <div class="split-bar" aria-hidden="true">
+      <i data-seg="0" style="width:50%;background:var(--jade)"></i>
+      <i data-seg="1" style="width:10%;background:var(--straw)"></i>
+      <i data-seg="2" style="width:18.7%;background:#3d5a80"></i>
+      <i data-seg="3" style="width:10%;background:#4d8f3a"></i>
+      <i data-seg="4" style="width:5%;background:var(--dye)"></i>
+      <i data-seg="5" style="width:6.3%;background:#7a6a55"></i>
+    </div>
+    <ul class="split">
+      <li><b style="background:var(--jade)"></b>
+        <span><span lang="en">Weaver</span><span lang="sw">Mfumaji</span> <em>50%</em></span><span class="amt" data-amt="0">KSh 2,250</span></li>
+      <li><b style="background:var(--straw)"></b>
+        <span><span lang="en">Materials and packaging</span><span lang="sw">Vifaa na ufungashaji</span> <em>10%</em></span><span class="amt" data-amt="1">KSh 450</span></li>
+      <li><b style="background:#3d5a80"></b>
+        <span><span lang="en">Hub operations and delivery</span><span lang="sw">Uendeshaji wa kituo na usafirishaji</span> <em>19%</em></span><span class="amt" data-amt="2">KSh 843</span></li>
+      <li><b style="background:#4d8f3a"></b>
+        <span><span lang="en">Palm regeneration fund</span><span lang="sw">Mfuko wa kurejesha mikoche</span> <em>10%</em></span><span class="amt" data-amt="3">KSh 450</span></li>
+      <li><b style="background:var(--dye)"></b>
+        <span><span lang="en">Youth apprenticeships</span><span lang="sw">Uanagenzi wa vijana</span> <em>5%</em></span><span class="amt" data-amt="4">KSh 225</span></li>
+      <li><b style="background:#7a6a55"></b>
+        <span><span lang="en">Member-owned surplus</span><span lang="sw">Ziada inayomilikiwa na wanachama</span> <em>6%</em></span><span class="amt" data-amt="5">KSh 282</span></li>
+    </ul>
+    <p class="small" lang="en">Year 1 split, to be agreed with the weavers. As fixed costs are spread over more baskets, the surplus share rises (about 11% of sales by year 3). For comparison, a basket paid the weaver KSh 700 in 2016 (IGAD study).</p>
+    <p class="small" lang="sw">Mgawanyo wa mwaka wa 1, utakaokubaliwa na wafumaji. Gharama zisizobadilika zinaposambazwa kwa vikapu vingi, sehemu ya ziada hupanda (karibu 11% ya mauzo ifikapo mwaka wa 3). Kwa kulinganisha, kikapu kililipa mfumaji KSh 700 mwaka 2016 (utafiti wa IGAD).</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 lang="en">What this sale plants</h2>
+    <h2 lang="sw">Kile mauzo haya yanapanda</h2>
+    <p lang="en">10% of every sale funds replanting and protecting Doum palm stands.</p>
+    <p lang="sw">Asilimia 10 ya kila mauzo hufadhili upandaji upya na ulinzi wa mikoche.</p>
+    <div class="counter">
+      <div class="big">34</div>
+      <div class="track" role="img" aria-label="34 of 4,600 seedlings"><i style="width:.74%"></i></div>
+      <p class="small" lang="en">34 of 4,600 seedlings planted toward the year 1 target (sample count).</p>
+      <p class="small" lang="sw">Miche 34 kati ya 4,600 imepandwa kuelekea lengo la mwaka wa 1 (hesabu ya mfano).</p>
+    </div>
+    <p lang="en">Our target: 70% or more of seedlings alive after 12 months, checked with KEFRI or KALRO. Results are published for every batch.</p>
+    <p lang="sw">Lengo letu: miche 70% au zaidi iwe hai baada ya miezi 12, ikikaguliwa na KEFRI au KALRO. Matokeo huchapishwa kwa kila kundi la vikapu.</p>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="wrap">
+    <h2 lang="en">The community owns it</h2>
+    <h2 lang="sw">Jamii inaimiliki</h2>
+    <p lang="en">The community owns its knowledge, its designs and the benefit-sharing. That cannot be copied from a catalogue.</p>
+    <p lang="sw">Jamii inamiliki ujuzi wake, miundo yake na ugavi wa manufaa. Hilo haliwezi kunakiliwa kutoka kwenye katalogi.</p>
+    <ul class="pledges">
+      <li lang="en">Weavers set prices and share the surplus.</li>
+      <li lang="sw">Wafumaji hupanga bei na kugawana ziada.</li>
+      <li lang="en">Weaving skills are held by women and elders, and recorded only with their consent.</li>
+      <li lang="sw">Ujuzi wa kufuma unashikiliwa na wanawake na wazee, na hurekodiwa kwa ridhaa yao tu.</li>
+      <li lang="en">Free, prior and informed consent comes before any design is sold.</li>
+      <li lang="sw">Ridhaa huru, ya awali na yenye taarifa kamili hutangulia kabla ya muundo wowote kuuzwa.</li>
+      <li lang="en">Regeneration results are published for every batch.</li>
+      <li lang="sw">Matokeo ya urejeshaji wa mikoche huchapishwa kwa kila kundi.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 lang="en">What your purchase helps build</h2>
+    <h2 lang="sw">Kile ununuzi wako unachosaidia kujenga</h2>
+    <p class="sub" lang="en">Our year 1 plan: one hub and 80 weavers.</p>
+    <p class="sub" lang="sw">Mpango wetu wa mwaka wa 1: kituo kimoja na wafumaji 80.</p>
+    <ul class="build">
+      <li><strong>80</strong>
+        <span lang="en">weavers earning fair income, about KSh 101,250 each in the year</span>
+        <span lang="sw">wafumaji wanaopata kipato cha haki, takriban KSh 101,250 kila mmoja kwa mwaka</span></li>
+      <li><strong>50</strong>
+        <span lang="en">young people in paid apprenticeships</span>
+        <span lang="sw">vijana katika uanagenzi wenye malipo</span></li>
+      <li><strong>4,600</strong>
+        <span lang="en">palm seedlings planted</span>
+        <span lang="sw">miche ya mikoche itakayopandwa</span></li>
+      <li><strong>3,600</strong>
+        <span lang="en">traceable baskets</span>
+        <span lang="sw">vikapu vinavyofuatiliwa</span></li>
+      <li><strong>40</strong>
+        <span lang="en">weaving techniques documented with consent</span>
+        <span lang="sw">mbinu za kufuma zitakazorekodiwa kwa ridhaa</span></li>
+    </ul>
+    <ul class="sdg">
+      <li><b style="background:#e5243b">1</b><span lang="en">No poverty</span><span lang="sw">Kutokomeza umaskini</span></li>
+      <li><b style="background:#c9301a">5</b><span lang="en">Gender equality</span><span lang="sw">Usawa wa kijinsia</span></li>
+      <li><b style="background:#a21942">8</b><span lang="en">Decent work and growth</span><span lang="sw">Kazi za staha na ukuaji</span></li>
+      <li><b style="background:#9a6c1c">12</b><span lang="en">Responsible consumption</span><span lang="sw">Matumizi yenye uwajibikaji</span></li>
+      <li><b style="background:#3f7e44">13</b><span lang="en">Climate action</span><span lang="sw">Hatua kwa tabianchi</span></li>
+      <li><b style="background:#3a7d1e">15</b><span lang="en">Life on land</span><span lang="sw">Maisha juu ya ardhi</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta" id="reorder">
+  <div class="wrap">
+    <h2 lang="en">Reorder, or message the weavers</h2>
+    <h2 lang="sw">Agiza tena, au wasiliana na wafumaji</h2>
+    <p lang="en">No payments are connected yet. Email us your basket number and we will reply.</p>
+    <p lang="sw">Malipo bado hayajaunganishwa. Tutumie nambari ya kikapu chako kwa barua pepe nasi tutakujibu.</p>
+    <a class="btn" href="mailto:richard@richardmiruka.pw?subject=Turkana%20Heritage%20GreenWorks%3A%20reorder"><span lang="en">Email us</span><span lang="sw">Tuandikie barua pepe</span></a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 lang="en">Meet the team</h2>
+    <h2 lang="sw">Kutana na timu</h2>
+    <ul class="team">
+      <li><strong>Riptoya Elema</strong>
+        <span lang="en">Enterprise lead. Community and partnership engagements.</span>
+        <span lang="sw">Kiongozi wa biashara. Ushirikiano na jamii na washirika.</span></li>
+      <li><strong>Maryanne Gathoni</strong>
+        <span lang="en">Community liaison and weaver relations. Community mobilization and relationship management.</span>
+        <span lang="sw">Mratibu wa jamii na uhusiano na wafumaji. Kuhamasisha jamii na kusimamia mahusiano.</span></li>
+      <li><strong>Richard Miruka</strong>
+        <span lang="en">Product design and quality. Digital platform and QR page.</span>
+        <span lang="sw">Ubunifu wa bidhaa na ubora. Jukwaa la kidijitali na ukurasa wa QR.</span></li>
+      <li><strong>Sheila Kurgat</strong>
+        <span lang="en">Finance and impact tracking.</span>
+        <span lang="sw">Fedha na ufuatiliaji wa athari.</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p lang="en">Turkana Heritage GreenWorks is a prototype built for the Institute for Social Transformation’s Indigenous Knowledge to Sustainable Enterprise challenge. Figures are planning assumptions to test with weavers and mentors.</p>
+    <p lang="sw">Turkana Heritage GreenWorks ni mfano wa majaribio uliotayarishwa kwa shindano la Institute for Social Transformation la Maarifa Asilia hadi Biashara Endelevu. Takwimu ni makadirio ya mipango yatakayojaribiwa na wafumaji na washauri.</p>
+  </div>
+</footer>
+
+<script>
+/* Price slider: recalculates the six shares. Without JavaScript the page shows the KSh 4,500 split. */
+(function(){
+  var AT_4500=[2250,450,843,450,225,282];
+  var r=document.getElementById("price");
+  if(!r||!r.addEventListener)return;
+  var out=document.querySelector("output[for=price]");
+  var amts=document.querySelectorAll("[data-amt]");
+  var segs=document.querySelectorAll("[data-seg]");
+  function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,",");}
+  function update(){
+    var p=+r.value;
+    out.textContent="KSh "+fmt(p);
+    for(var i=0;i<amts.length;i++){var k=+amts[i].getAttribute("data-amt");amts[i].textContent="KSh "+fmt(Math.round(p*AT_4500[k]/4500));}
+    for(var j=0;j<segs.length;j++){var m=+segs[j].getAttribute("data-seg");segs[j].style.width=(AT_4500[m]/45)+"%";}
+  }
+  r.addEventListener("input",update);
+})();
+</script>
+</body>
+</html>
