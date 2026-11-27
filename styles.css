@@ -122,6 +122,29 @@ input[type=range]{width:100%;max-width:36rem;accent-color:var(--jade);height:2.7
 .team strong{display:block;font-size:1.1rem;color:var(--lake)}
 .team span{display:block;color:var(--muted);max-width:30rem}
 
+.video-box {
+  width: 100%;
+  max-width: 320px;
+  /* keeps the vertical Short from getting huge on desktop */
+  margin: 0 auto;
+}
+
+.video-box iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  /* Shorts are portrait */
+  border: 0;
+  border-radius: 16px;
+  background: #000;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+}
+
+.video-box .small {
+  text-align: center;
+  margin-top: .5rem;
+}
+
 footer{background:var(--lake);color:#b9cfca;padding:2rem 0 2.5rem;font-size:.92rem}
 footer p{max-width:46rem}
 
